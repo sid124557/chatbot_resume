@@ -6,9 +6,9 @@ from difflib import SequenceMatcher
 
 app = Flask(__name__)
 
-welcome = "Hi! I'm Srilatha's Resume Chatbot. How can I help you?"
+welcome = "Hi! I'm siddharth's Resume Chatbot. How can I help you?"
 nomatch = "Sorry, I cannot help with that, I will note your question for her reference."
-qafile = "srilatha-resume.csv"
+qafile = "sid-resume.csv"
 thankyou = "Thank you for contacting me."
 exitmessage = "Please type 'bye' to exit the chat."
 
@@ -30,4 +30,4 @@ def get_bot_response():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
